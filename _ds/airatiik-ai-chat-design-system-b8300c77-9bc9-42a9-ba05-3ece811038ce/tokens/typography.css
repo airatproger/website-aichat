@@ -1,0 +1,32 @@
+/* ============================================================
+   TYPOGRAPHY — Inter. Compact UI scale (sidebar-first).
+   ============================================================ */
+:root {
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+               Roboto, "Helvetica Neue", Arial, sans-serif;
+
+  /* weights */
+  --fw-regular: 400;  /* @kind font */
+  --fw-medium:  500;  /* @kind font */
+  --fw-semibold: 600; /* @kind font */
+
+  /* role: size / line-height — matches Figma "Fonts" frame */
+  --text-h1-size: 24px;   --text-h1-lh: 36px;   /* Semibold */
+  --text-h2-size: 20px;   --text-h2-lh: 30px;   /* Semibold */
+  --text-h3-size: 18px;   --text-h3-lh: 26px;   /* Semibold */
+  --text-h4-size: 16px;   --text-h4-lh: 24px;   /* Semibold */
+  --text-button-size: 16px; --text-button-lh: 24px; /* Medium */
+  --text-body-size: 16px; --text-body-lh: 24px;  /* Regular */
+  --text-footnote-size: 14px; --text-footnote-lh: 20px; /* Regular */
+  --text-small-size: 12px; --text-small-lh: 16px; /* Regular */
+}
+
+/* Optional helper classes (components mostly set type inline via tokens) */
+.t-h1 { font: var(--fw-semibold) var(--text-h1-size)/var(--text-h1-lh) var(--font-sans); letter-spacing: -0.01em; color: var(--text-primary); }
+.t-h2 { font: var(--fw-semibold) var(--text-h2-size)/var(--text-h2-lh) var(--font-sans); letter-spacing: -0.01em; color: var(--text-primary); }
+.t-h3 { font: var(--fw-semibold) var(--text-h3-size)/var(--text-h3-lh) var(--font-sans); color: var(--text-primary); }
+.t-h4 { font: var(--fw-semibold) var(--text-h4-size)/var(--text-h4-lh) var(--font-sans); color: var(--text-primary); }
+.t-button { font: var(--fw-medium) var(--text-button-size)/var(--text-button-lh) var(--font-sans); }
+.t-body { font: var(--fw-regular) var(--text-body-size)/var(--text-body-lh) var(--font-sans); color: var(--text-primary); }
+.t-footnote { font: var(--fw-regular) var(--text-footnote-size)/var(--text-footnote-lh) var(--font-sans); color: var(--text-secondary); }
+.t-small { font: var(--fw-regular) var(--text-small-size)/var(--text-small-lh) var(--font-sans); color: var(--text-secondary); }

@@ -1,0 +1,30 @@
+/* ============================================================
+   SPACING & RADII — 4px base grid
+   ============================================================ */
+:root {
+  --space-0: 0;
+  --space-1: 2px;
+  --space-2: 4px;
+  --space-3: 6px;
+  --space-4: 8px;
+  --space-5: 10px;
+  --space-6: 12px;
+  --space-8: 16px;
+  --space-10: 20px;
+  --space-12: 24px;
+  --space-16: 32px;
+  --space-20: 40px;
+  --space-24: 48px;
+
+  /* radii — from soft pill chrome down to chips */
+  --radius-pill:  100px;  /* header pills, round icon buttons   */
+  --radius-frame: 32px;   /* sidebar frame, input bar, cards    */
+  --radius-lg:    24px;   /* large modal / sheet                */
+  --radius-md:    16px;   /* buttons, panels                    */
+  --radius-sm:    12px;   /* small inputs, list rows            */
+  --radius-xs:    8px;    /* chips, tags                        */
+
+  /* icon button hit area */
+  --hit-sm: 36px;
+  --hit-md: 40px;
+}

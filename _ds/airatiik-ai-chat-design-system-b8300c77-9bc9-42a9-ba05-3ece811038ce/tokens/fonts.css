@@ -1,0 +1,7 @@
+/* ============================================================
+   FONTS — Inter (Regular 400, Medium 500, Semibold 600)
+   Inter is the real typeface used in the source Figma file.
+   Self-hosted in this project (see assets/fonts/inter.css) — no CDN round-trip,
+   so the @font-face rules are available on first paint with no fallback flash.
+   ============================================================ */
+@import url("../../../assets/fonts/inter.css");

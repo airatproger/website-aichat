@@ -1,0 +1,33 @@
+/* ============================================================
+   EFFECTS — glass, shadow, blur, motion
+   The signature look: warm-white glass on inset hairline ring
+   with a soft ambient shadow.
+   ============================================================ */
+:root {
+  /* blur radii for backdrop-filter */
+  --blur-sm: 8px;
+  --blur-md: 16px;
+
+  /* shadows */
+  --shadow-glass: 0 0 16px rgba(0, 0, 0, 0.08);            /* floating glass chrome */
+  --shadow-card:  0 4px 24px rgba(0, 0, 0, 0.08);          /* modals, popovers      */
+  --shadow-pop:   0 8px 32px rgba(0, 0, 0, 0.12);          /* menus over content    */
+
+  /* inset hairline ring — used everywhere instead of border */
+  --ring: inset 0 0 0 1px var(--border-default);
+  --ring-subtle: inset 0 0 0 1px var(--border-subtle);
+
+  /* composed: the canonical "glass surface" boxShadow */
+  --elevation-glass: var(--ring), var(--shadow-glass);
+
+  /* protection gradients (top header / bottom input fades) */
+  --fade-top:    linear-gradient(180deg, rgba(255,255,255,0.48) 0%, rgba(255,255,255,0) 100%); /* @kind other */
+  --fade-bottom: linear-gradient(0deg,  rgba(255,255,255,0.48) 0%, rgba(255,255,255,0) 100%); /* @kind other */
+
+  /* motion */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);    /* @kind other */
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1); /* @kind other */
+  --dur-fast: 120ms; /* @kind other */
+  --dur-base: 200ms; /* @kind other */
+  --dur-slow: 320ms; /* @kind other */
+}
